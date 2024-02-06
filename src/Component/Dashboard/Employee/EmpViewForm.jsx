@@ -1317,7 +1317,7 @@ function EmpViewForm() {
               </Box>
             </Stack>
 
-            <Stack direction="column">
+            {/* <Stack direction="column">
               <Box
                 display="flex"
                 alignItems="center "
@@ -1339,7 +1339,7 @@ function EmpViewForm() {
                   Save
                 </Button>
               </Box>
-            </Stack>
+            </Stack> */}
           </div>
         )}
         <Flex justifyContent="center" alignItems="center">
