@@ -15,7 +15,7 @@ function RootLayout() {
       {/* Main Content */}
       <Flex flexGrow={1} direction={{base:"column" ,md:"row"}}>
         {/* Sidebar */}
-        <Box flexBasis={{ base: "10%", md: "20%" }} mt="1rem" w="150px">
+        <Box flexBasis={{ base: "10%", md: "20%" }} mt="0rem" w="150px" bg="white">
           <SideBar />
         </Box>
 

@@ -82,27 +82,27 @@ const Login = () => {
       width={"98%"}
       height={"90vh"}
       mr={{ base: "2rem" }}
-      // bg="red.100"
+     
     >
       <Flex direction={{base:"column",md:"row"}} gap="1rem" justify={{base:"center", md:"space-around"}} mx="2rem" align="center">
-        <Box className="image-box">
-          <Image height={{base:"35vh", md:"75vh"}} width={{base:"100vw",md:"40vw"}} src={loginimage} />
-        </Box>
 
         <Box height={{base:"50vh", md:"75vh"}} width={{base:"85vw",md:"40vw"}}
             mx={{base:"3rem", md:'0rem'}}
             mr={{base:"4rem"}}
             p={{base:"0.5rem", md:"1rem"}}
             className="login-data"
-            bg={"#f2f2f2"}>
-          <Box
-            
-          >
+            bg={"#f2f2f2"}
+            boxShadow="2xl"
+            border = "1 px solid red"
+            borderRadius="15px">
+              
+          <Box mt="2rem" >
             <Center>
-              <Heading color={"#FF7F50"} as="h2" id="login">
+              <Heading color="teal" as="h1" id="login">
                 Login
               </Heading>
             </Center>
+            <Box mt="2rem">
             <form>
               {/* <FormControl className="form-group">
                 <FormLabel color={"orange"} htmlFor="role" id="log">
@@ -117,7 +117,7 @@ const Login = () => {
                 </Select>
               </FormControl> */}
               <FormControl className="form-group">
-                <FormLabel color={"orange"} htmlFor="userID" id="log">
+                <FormLabel color={"red"} htmlFor="userID" id="log">
                   User ID
                 </FormLabel>
                 <Input
@@ -129,7 +129,7 @@ const Login = () => {
                 />
               </FormControl>
               <FormControl className="form-group">
-                <FormLabel color={"orange"} htmlFor="password" id="log">
+                <FormLabel color={"red"} htmlFor="password" id="log">
                   Enter Password
                 </FormLabel>
                 <InputGroup>
@@ -143,7 +143,7 @@ const Login = () => {
                 </InputGroup>
               </FormControl>
               <FormControl className="form-group">
-                <ChakraLink color={"orange"} href="#forgot-password">
+                <ChakraLink color={"red"} href="#forgot-password">
                   Forgot Password?
                 </ChakraLink>
               </FormControl>
@@ -155,6 +155,7 @@ const Login = () => {
                 </Center>
               </FormControl>
             </form>
+            </Box>
           </Box>
         </Box>
       </Flex>

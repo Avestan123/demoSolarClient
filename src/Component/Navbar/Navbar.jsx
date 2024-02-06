@@ -1,4 +1,4 @@
-import Greenlife from "../../Images/greenlife.png";
+import Avestan from "../../Images/avestan.jpeg";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 import { useState, useEffect } from "react";
 import {
@@ -80,9 +80,11 @@ export default function Navbar() {
           <Image
             boxSize={{ base: "5rem", md: "10rem" }}
             objectFit="cover"
-            src={Greenlife}
+            src={Avestan}
             width={{ base: "5rem", md: "10rem" }}
             height={{ base: "2rem", md: "5rem" }}
+            borderRadius="15px"
+            p="0.5rem"
           />
         </Box>
         <Box>
